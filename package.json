@@ -1,0 +1,19 @@
+{
+  "name": "casinohustler",
+  "version": "1.0.0",
+  "description": "Software Projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oldnavy281/CasinoHustler.git"
+  },
+  "author": "CStGeorges QMorley RBenner HWhite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oldnavy281/CasinoHustler/issues"
+  },
+  "homepage": "https://github.com/oldnavy281/CasinoHustler#readme"
+}
