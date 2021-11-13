@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/oldnavy281/CasinoHustler/issues"
   },
-  "homepage": "https://github.com/oldnavy281/CasinoHustler#readme"
+  "homepage": "https://github.com/oldnavy281/CasinoHustler#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "pug": "^3.0.2"
+  }
 }
