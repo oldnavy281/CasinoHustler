@@ -1,0 +1,8 @@
+SPRINT REVIEW:
+We still need to connect the front end and the back end. 
+We've got the front end JS done and are currently working on the backend JS. 
+Rachael and Hailey both are working on the front end and they've completed the major features for a basic game. Buttons that
+work in order to play a basic game.
+Quinton was/is working on the graphics of the game. They're finished but they were sent over incorrectly and He needs to resend them, They'll be added
+on 11/20/2021. 
+Chandler is working on the back end and making sure everything works correctly. (Quinton will help with that once graphics are done). 
