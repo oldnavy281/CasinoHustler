@@ -5,28 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Casino Hustler</title>
 </head>
 <body>
-   
     <div class="grid-container">
-        <div class = "Token">
-            <button type="button" class="tokenButton"></button>
+        <div class="Token">
+            <button id="btn" onclick="tokenClicked()">Money!</button>
         </div>
-        <div class ="title">Casino Hustler</div>
-        <div class = "Background">Game play area</div>
-        <div class = "button1">
-            <button type="button">Click Me!</button>
-        </div>  
-        <div class="NoWork">
-            <button type="button">Click Me!</button>
+
+        <div class="title">Casino Hustler</div>
+
+        <div class="Background">Game Arena</div>
+
+        <div class="button1">
+            <button id="btn" onclick="slotsClicked()">Slots!</button>
         </div>
-        <div class="NoWork2">
-            <button type="button">Click Me!</button>
+
+        <div class="button2">
+            <button id="btn" onclick="pokerClicked()">Poker!</button>
         </div>
-      </div>
-      
-    
-   
-</body>
+
+        <div class="button3">
+            <button id="btn" onclick="bljkClicked()">BlackJack!</button>
+        </div>
+
+      <script src="script.js"></script>
+
+    </body>
 </html>
