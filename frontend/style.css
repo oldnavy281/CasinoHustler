@@ -1,37 +1,61 @@
 body{
-    background-color: aqua;
+    background-color: #d9d982;
 }
 .grid-container {
     display: grid;
-    grid-template-columns: 10% auto auto ;
-    grid-gap: 10px;
-    background-color: #2196F3;
+    grid-template-columns: 10% 65% auto ;
+    grid-gap: 5px;
+    /* background-color: #2196F3; */
     padding: 10px;
   }
+
   .title{
     grid-column: span 2;
-    font-size: 25px;
+    font-size: 75px;
     text-align: center;
+    color: #000;
+    animation: glow 1s ease-in-out infinite alternate;
   }
 
-.Token{
-    background-color: blue;
-}
-
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  
 .Background{
     grid-column: span 2;
     grid-row: span 3;
-    background-image:linear-gradient(red, yellow, blue);
+    background-image: url("images/Alantic City.jpg");
+    height: 300px;
+    
 }
 
-.button1{
-    background-color: brown;
+#btn{
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    color: #000;
+    height: 50%;
+    transition-duration: 0.4s;
+    background-color: white;  
+    border: 2px solid hotpink;
 }
 
-.NoWork{
-    background-color: crimson;
+#btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.NoWork2{
-    background-color: grey;
+#btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#btnMoney{
+    border-radius: 50%;
+    height: 125px;
 }
