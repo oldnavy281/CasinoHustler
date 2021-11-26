@@ -1,4 +1,4 @@
-var buns = 0;
+var chips = 0;
 
 var slots = 0;
 var poker = 0;
@@ -10,26 +10,52 @@ var pokerCost = 25;
 var bljkCost = 40;
 var roulCost = 55;
 
+var slotsMul = 0;
+var pokerMul = 0;
+var bljkMul = 0;
+var roulMul = 0;
+
+//setInterval(theCounter, 1000);
+
+function theCounter() {
+    //earn money each second
+    chips++;
+
+    if (slots > 0) {
+        chips = chips + slotsMul;
+    }
+    if (poker > 0) {
+        chips = chips + pokerMul;
+    }
+    if (bljk > 0) {
+        chips = chips + bljkMul;
+    }
+    if (roul > 0) {
+        chips = chips + roulMul;
+    }
+
+    console.log("Money: " + chips);
+}
+
 function tokenClicked() {
     //money click
-    buns++
-    console.log("Money: " + muns);
-
-    //allow for it to incriment up without clicking
+    chips++
+    console.log("Money: " + chips);
 }
 
 function slotsClicked() {
 
     //slots cost
     //cannot buy if money is less than cost
-    if (buns >= slotCost) {
+    if (chips >= slotCost) {
         slots++
+        slotsMul = 1 * slots;
         console.log("Slots: " + slots);
-        buns -= slotCost;
+        chips -= slotCost;
     }
     //log money and needed amount if money is not enough
     else {
-        console.log("Not Enough Muns: " + buns);
+        console.log("Not Enough Muns: " + chips);
         console.log("Needed: " + slotCost);
     }
 }
@@ -37,14 +63,15 @@ function slotsClicked() {
 function pokerClicked() {
     //poker cost
     //cannot buy if money is less than cost
-    if (buns >= 25) {
+    if (chips >= 25) {
         poker++
+        pokerMul = 3 * poker;
         console.log("Poker: " + poker);
-        buns -= 25
+        chips -= 25
     }
     //log money and needed amount if money is not enough
     else {
-        console.log("Not Enough Muns: " + buns);
+        console.log("Not Enough Muns: " + chips);
         console.log("Needed: 25");
     }
 }
@@ -52,14 +79,15 @@ function pokerClicked() {
 function bljkClicked() {
     //bljk cost
     //cannot buy if money is less than cost
-    if (buns >= 40) {
+    if (chips >= 40) {
         bljk++
+        bljkMul = 7 * bljk;
         console.log("BlackJack: " + bljk);
-        buns -= 40;
+        chips -= 40;
     }
     //log money and needed amount if money is not enough
     else {
-        console.log("Not Enough Muns: " + buns);
+        console.log("Not Enough Muns: " + chips);
         console.log("Needed: 40");
     }
 }
@@ -67,14 +95,15 @@ function bljkClicked() {
 function roulClicked() {
     //roul cost
     //cannot buy if money is less than cost
-    if (buns >= 55) {
+    if (chips >= 55) {
         roul++
+        roulMul = 12 * roul;
         console.log("Roulette: " + roul);
-        buns -= 55;
+        chips -= 55;
     }
     //log money and needed amount if money is not enough
     else {
-        console.log("Not Enough Muns: " + buns);
+        console.log("Not Enough Muns: " + chips);
         console.log("Needed: 55");
     }
 }
