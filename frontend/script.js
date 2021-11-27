@@ -15,7 +15,7 @@ var pokerMul = 0;
 var bljkMul = 0;
 var roulMul = 0;
 
-//setInterval(theCounter, 1000);
+setInterval(theCounter, 1000);
 
 function theCounter() {
     //earn money each second
@@ -34,6 +34,7 @@ function theCounter() {
         chips = chips + roulMul;
     }
 
+    document.getElementById("btnMoney").innerHTML = "$" + chips;
     console.log("Money: " + chips);
 }
 
