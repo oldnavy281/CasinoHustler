@@ -29,7 +29,7 @@ body{
   
 .Background{
     grid-column: span 2;
-    grid-row: span 3;
+    grid-row: span 4;
     background-image: url("images/carpet finished.png");
     height: 500px;
     background-size: cover;
