@@ -15,26 +15,31 @@ var pokerMul = 0;
 var bljkMul = 0;
 var roulMul = 0;
 
+//TODO: Allow for money to only incriment when theres things out
+
 setInterval(theCounter, 1000);
 
 function theCounter() {
     //earn money each second
-    chips++;
 
     if (slots > 0) {
+        chips++
         chips = chips + slotsMul;
     }
     if (poker > 0) {
+        chips++
         chips = chips + pokerMul;
     }
     if (bljk > 0) {
+        chips++
         chips = chips + bljkMul;
     }
     if (roul > 0) {
+        chips++
         chips = chips + roulMul;
     }
 
-    document.getElementById("btnMoney").innerHTML = "$" + chips;
+    document.getElementById("Money").innerHTML = "$" + chips;
     console.log("Money: " + chips);
 }
 
