@@ -2,6 +2,9 @@ const express = require('express');
 const pug = require('pug');
 const routes = require('./routes/routes');
 const path = require('path');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+
 
 const app = express();
 
