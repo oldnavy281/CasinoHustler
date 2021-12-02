@@ -138,4 +138,14 @@ body{
 
 .moneyShow{
   grid-area: 1 / 6 / 1 / 7;
+  background-image: url(" images/sign.png");
+  background-size: 200px;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+#Money{
+ text-align: center;
+ padding-top: 35%;
+ font-size: 25px;
 }
