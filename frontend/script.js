@@ -19,6 +19,11 @@ var pokerMul = 0;
 var bljkMul = 0;
 var roulMul = 0;
 
+var slotC = 0;
+var pokerC = 0;
+var bljkC = 0;
+var roulC = 0;
+
 var randomGood1;
 var randomGood2;
 var randomBad1;
@@ -34,7 +39,7 @@ Add Commas to money
 */
 
 setInterval(theCounter, 1000);
-setInterval(theUpdate, 1000);
+setInterval(theUpdate, 100);
 
 function theCounter() {
 
@@ -54,7 +59,7 @@ function theCounter() {
     if (roul > 0) {
         chips++
         chips = chips + roulMul;
-    }
+    } //this probably has issue
 
     console.log("Money: " + chips);
 }
@@ -77,12 +82,6 @@ function theUpdate() {
 
         randomBad1 = Math.floor(Math.random() * 11);
         randomBad2 = Math.floor(Math.random() * 11);
-
-        console.log("RandomGood1: " + randomGood1);
-        console.log("RandomGood2: " + randomGood2);
-
-        console.log("RandomBad1: " + randomBad1);
-        console.log("RandomBad2: " + randomBad2);
     }
 
     //Random chance for good to happen
@@ -116,6 +115,17 @@ function slotsClicked() {
         slotsMul = 1 * slots;
         console.log("Slots: " + slots);
         chips -= slotCost;
+
+        slotC++;
+
+        if (slotC >= 5) {
+            slotC = 0;
+        }
+        if (slotC == 4) {
+            slotCost = slotCost * 2;
+        }
+
+        console.log("SlotC: " + slotC);
     }
     //log money and needed amount if money is not enough
     else {
@@ -123,10 +133,7 @@ function slotsClicked() {
         console.log("Needed: " + slotCost);
     }
 
-    //up cost of item
-    if (slots > 3) {
-        slotCost = slotCost * slotsMul;
-    }
+
 }
 
 function pokerClicked() {
@@ -137,6 +144,17 @@ function pokerClicked() {
         pokerMul = 3 * poker;
         console.log("Poker: " + poker);
         chips -= pokerCost;
+
+        pokerC++;
+
+        if (pokerC >= 5) {
+            pokerC = 0;
+        }
+        if (poker == 4) {
+            pokerCost = pokerCost * 2;
+        }
+
+        console.log("PokerC: " + pokerC);
     }
     //log money and needed amount if money is not enough
     else {
@@ -144,10 +162,7 @@ function pokerClicked() {
         console.log("Needed: 25");
     }
 
-    //up cost of item
-    if (poker > 3) {
-        pokerCost = pokerCost * pokerMul;
-    }
+
 }
 
 function bljkClicked() {
@@ -158,6 +173,17 @@ function bljkClicked() {
         bljkMul = 7 * bljk;
         console.log("BlackJack: " + bljk);
         chips -= bljkCost;
+
+        bljkC++
+
+        if (bljkC >= 5) {
+            bljkC = 0;
+        }
+        if (bljk == 4) {
+            bljkCost = bljkCost * 2;
+        }
+
+        console.log("BljkC: " + bljkC);
     }
     //log money and needed amount if money is not enough
     else {
@@ -165,10 +191,7 @@ function bljkClicked() {
         console.log("Needed: 40");
     }
 
-    //up cost of item
-    if (bljk > 3) {
-        bljkCost = bljkCost * bljkMul;
-    }
+
 }
 
 function roulClicked() {
@@ -179,6 +202,17 @@ function roulClicked() {
         roulMul = 12 * roul;
         console.log("Roulette: " + roul);
         chips -= roulCost;
+
+        roulC++
+
+        if (roulC >= 5) {
+            roulC = 0;
+        }
+        if (roul == 4) {
+            roulCost = roulCost * 2;
+        }
+
+        console.log("RoulC: " + roulC);
     }
     //log money and needed amount if money is not enough
     else {
@@ -186,10 +220,7 @@ function roulClicked() {
         console.log("Needed: 55");
     }
 
-    //up cost of item
-    if (roul > 3) {
-        roulCost = roulCost * roulMul;
-    }
+
 }
 
 function updateClicked() {
