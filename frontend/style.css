@@ -149,29 +149,36 @@ body{
  padding-top: 35%;
  font-size: 25px;
 }
-#slots{
+#slots, #slotDisplay {
   display: inline;
+  color: #fff;
   /* object-position: 5px 100%S; */
   /* position: absolute;
   top: center;
   left: 16px; */
 }
 
-#poker{
+#poker, #pokerDisplay{
   display: inline;
+  color: #fff;
   /* position: absolute;
   top: center;
   left: 16px; */
 }
-#bljk{
+#bljk,#bljkDisplay{
   display: inline;
+  float: right;
+  color: #fff;
   /* position: absolute;
   top: center;
   left: 16px; */
 }
-#roul{
+#roul,#roulDisplay{
   display: inline;
+  float: right;
+  color: #fff;
   /* position: absolute;
   top: center;
   left: 16px; */
 }
+ 
