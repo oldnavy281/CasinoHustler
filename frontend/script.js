@@ -75,6 +75,11 @@ function theUpdate() {
 
     document.getElementById("btn5").innerHTML = "Update! $" + updateCost;
 
+    document.getElementById("slotDisplay").innerHTML = "Slots: " + slots;
+    document.getElementById("pokerDisplay").innerHTML = "Poker: " + poker;
+    document.getElementById("bljkDisplay").innerHTML = "BlackJack: " + bljk;
+    document.getElementById("roulDisplay").innerHTML = "Roulette: " + roul;
+
     //DoubleMoney event & HalfMoney event
     if (chips >= 50) {
         randomGood1 = Math.floor(Math.random() * 11);
@@ -125,6 +130,9 @@ function slotsClicked() {
             slotCost = slotCost * 2;
         }
 
+        document.getElementById('slots').style.display = 'block';
+        document.getElementById("slotDisplay").style.display = 'block';
+
         console.log("SlotC: " + slotC);
     }
     //log money and needed amount if money is not enough
@@ -132,7 +140,6 @@ function slotsClicked() {
         console.log("Not Enough Muns: " + chips);
         console.log("Needed: " + slotCost);
     }
-    document.getElementById('slots').style.display='block';
 
 }
 
@@ -154,6 +161,9 @@ function pokerClicked() {
             pokerCost = pokerCost * 2;
         }
 
+        document.getElementById('poker').style.display = 'block';
+        document.getElementById("pokerDisplay").style.display = 'block';
+
         console.log("PokerC: " + pokerC);
     }
     //log money and needed amount if money is not enough
@@ -161,9 +171,6 @@ function pokerClicked() {
         console.log("Not Enough Muns: " + chips);
         console.log("Needed: 25");
     }
-    document.getElementById('poker').style.display='block';
-
-
 }
 
 function bljkClicked() {
@@ -184,6 +191,9 @@ function bljkClicked() {
             bljkCost = bljkCost * 2;
         }
 
+        document.getElementById('bljk').style.display = 'block';
+        document.getElementById("bljkDisplay").style.display = 'block';
+
         console.log("BljkC: " + bljkC);
     }
     //log money and needed amount if money is not enough
@@ -191,8 +201,6 @@ function bljkClicked() {
         console.log("Not Enough Muns: " + chips);
         console.log("Needed: 40");
     }
-    document.getElementById('bljk').style.display='block';
-
 }
 
 function roulClicked() {
@@ -213,6 +221,9 @@ function roulClicked() {
             roulCost = roulCost * 2;
         }
 
+        document.getElementById('roul').style.display = 'block';
+        document.getElementById("roulDisplay").style.display = 'block';
+
         console.log("RoulC: " + roulC);
     }
     //log money and needed amount if money is not enough
@@ -220,8 +231,6 @@ function roulClicked() {
         console.log("Not Enough Muns: " + chips);
         console.log("Needed: 55");
     }
-
-    document.getElementById('roul').style.display='block';
 }
 
 function updateClicked() {
