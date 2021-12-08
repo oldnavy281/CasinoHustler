@@ -132,7 +132,7 @@ function slotsClicked() {
         console.log("Not Enough Muns: " + chips);
         console.log("Needed: " + slotCost);
     }
-
+    document.getElementById('slots').style.display='block';
 
 }
 
@@ -161,6 +161,7 @@ function pokerClicked() {
         console.log("Not Enough Muns: " + chips);
         console.log("Needed: 25");
     }
+    document.getElementById('poker').style.display='block';
 
 
 }
@@ -190,7 +191,7 @@ function bljkClicked() {
         console.log("Not Enough Muns: " + chips);
         console.log("Needed: 40");
     }
-
+    document.getElementById('bljk').style.display='block';
 
 }
 
@@ -220,7 +221,7 @@ function roulClicked() {
         console.log("Needed: 55");
     }
 
-
+    document.getElementById('roul').style.display='block';
 }
 
 function updateClicked() {
