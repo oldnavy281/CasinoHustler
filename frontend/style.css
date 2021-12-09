@@ -149,13 +149,19 @@ body{
  padding-top: 35%;
  font-size: 25px;
 }
+
+.second-grid-containter{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
+    /* background-color: #2196F3; */
+  padding: 10px;
+}
+
+
 #slots, #slotDisplay {
   display: inline;
   color: #fff;
-  /* object-position: 5px 100%S; */
-  /* position: absolute;
-  top: center;
-  left: 16px; */
 }
 
 #poker, #pokerDisplay{
